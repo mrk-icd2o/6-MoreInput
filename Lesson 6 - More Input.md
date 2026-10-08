@@ -8,6 +8,9 @@ We use the `createInput()` function to create textboxes (and other input types).
 
 1. Create a global variable, but don't assign it a value yet.
 2. Inside `setup()`, set it equal to `createInput()`, and use `.position()` to position it.
+
+*Note*: `.position()` is from the top left corner of the *window*, not your canvas.  Make a full screen sketch if you're using these inputs or find a workaround.
+
 3. Later we access the value inside the textbox using `.value()`. Note that this will be a string.
 
 ```javascript
@@ -96,3 +99,5 @@ function drawRectangle(){
 ```
 
 We name functions similar to variables (descriptive, and in camelCase). We will learn more about functions later in the course.
+
+This function runs **one time only** when the button is pressed - which may cause problems for us! You will have to find a creative solution (variables, if statements etc) to get this to work properly.
